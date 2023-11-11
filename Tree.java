@@ -1,12 +1,13 @@
 import java.util.Scanner;
 public class Tree {
     Node root;
+    int ind;
 
     public void insert(Scanner scanner){
         System.out.print("Enter the Value of the Root Node : ");
         int value = scanner.nextInt();
         root = new Node(value);
-        insert(scanner,root);
+//        insert(scanner,root);
     }
     public void insert(Scanner scanner,Node node){
         System.out.println("Do yo want to insert value in the Left of the "+node.value);
